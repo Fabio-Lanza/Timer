@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Chilanka&family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(143, 199, 216);
+    font-family: 'open sans';
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    height: 400px;
+    margin: 60px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgb(64, 127, 146);
+    position: relative;
+}
+.container h1{
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 15px; 
+    
+}
+
+.watch{
+    font-size: 70px;
+    letter-spacing: 5px;  
+    margin: 40px;
+}
+
+.btn{
+    margin-top: 40px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.start, .pause, .restart{ 
+    background-color: rgb(143, 199, 216);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.start:hover , .pause:hover, .restart:hover{
+    background-color: rgb(64, 127, 146);
+    transition: 0.5s;
+}
+
+.paused{
+    color: red;
+    font-weight: 600;
+}
